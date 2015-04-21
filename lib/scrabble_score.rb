@@ -8,8 +8,8 @@ class String
     score5 = ["K"]
     score8 = ["J", "X"]
     score10 = ["Q", "Z"]
-
-    word = self.split("")
+    word = self.upcase()
+    word = word.split("")
 
     word.each() do |letter|
       if score1.include?(letter)
