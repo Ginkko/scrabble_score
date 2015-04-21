@@ -13,7 +13,18 @@ class String
       return 1
     elsif score2.include?(self)
       return 2
+    elsif score3.include?(self)
+      return 3
+    elsif score4.include?(self)
+      return 4
+    elsif score5.include?(self)
+      return 5
+    elsif score8.include?(self)
+      return 8
+    elsif score10.include?(self)
+      return 10
     end
+
 
     #Returns a predefined numerical score for each letter
 
