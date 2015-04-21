@@ -9,8 +9,13 @@ describe('String#scrablle_score') do
   end
   #Break down each string into component letters
   it("breaks down the input into an array of letters") do
-    expect("GYM".scrabble_score()).to(eq(9))
+    expect("GYM".scrabble_score()).to(eq(["9"]))
   end
   #Add total score together from component letters.
 
+  #Make sure program is not case sensitive
+
+  it("upcases all letters") do
+    expect("gym".scrabble_score()).to(eq(["9"]))
+  end
 end
